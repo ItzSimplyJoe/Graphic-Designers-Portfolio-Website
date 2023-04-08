@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c76bc25f8c.js" crossorigin="anonymous"></script>
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ryan Morgan | Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><image src="images/logo.png" class="logo">Ryan Morgan</div>
+      <div class="menu" id="menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-list" id="navList">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="hero" id = "hero">
+        <div class="hero-text">
+            <h1>Hello I'm <span>Ryan</span></h1>
+            <h2>I'm an A-level student and a graphic artist</h2>
+        </div>
+        <img src="hero.svg" alt="hero">
+    </div>
+    <div class="aboutme" id = "about">
+        <div class="aboutme-text">
+            <h1>About Me</h1>
+            <p>Hi, my name is Ryan Morgan, im a year 13 student studying Art Graphics Design, English and Film Studies. I have a great passion and proclivity for art. Here you can find my portfolio of work that i have made so far, including my coursework as well as digital and hanmade work in a range of different styles.</p>
+        </div>
+        <div class="cards">
+        <a href = "#graphicdesign"><div class="card">
+            <h1>Graphic Design</h1>
+            <p>I can make logos, pages, advertisements and much more.</p>
+            <img src="graphicdesign.png">
+        </div></a>
+        <div class="card">
+            <h1>Illustration</h1>
+            <p>I can create digital drawings, physical drawnings in many different styles.</p>
+            <img src="illustration.png">
+        </div>
+        <div class="card">
+            <h1>Animation</h1>
+            <p>I can create simple or complex animations using many different mediums.</p>
+            <img src="hero.svg">
+        </div>
+    </div>
+    </div>
+    <div class="container" id="portfolio">
+      <h1 class = "heading">My Portfolio</h1>
+        <h2 class="subheading" id = "graphicdesign">Graphic Design</h2>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img class="gallery-image" src="images/nintendorebrand.jpg" alt="placeholder">
+            <div class="overlay">
+              <h2 class="overlay-heading">Nintendo Rebrand</h2>
+              <a href = "nintendorebrand.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-image" src="images/cyberpunk.jpg" alt="placeholder">
+            <div class="overlay">
+              <h2 class="overlay-heading">Mask Designs</h2>
+              <a href = "maskdesigns.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-image" src="port6.jpg" alt="placeholder">
+            <div class="overlay">
+              <h2 class="overlay-heading">Project Title</h2>
+              <p class="overlay-text">Description of the project</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-image" src="port7.jpg" alt="placeholder">
+            <div class="overlay">
+              <h2 class="overlay-heading">Project Title</h2>
+              <p class="overlay-text">Description of the project</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img class="gallery-image" src="port8.jpg" alt="placeholder">
+            <div class="overlay">
+              <h2 class="overlay-heading">Project Title</h2>
+              <p class="overlay-text">Description of the project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+const menuBtn = document.getElementById('menu');
+const navList = document.getElementById('navList');
+
+menuBtn.addEventListener('click', () => {
+  navList.classList.toggle('open');
+  menuBtn.classList.toggle('close');
+});
+
+</script>
+</html>
